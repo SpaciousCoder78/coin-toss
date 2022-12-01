@@ -33,6 +33,15 @@ namespace Coin_Toss
             {
                 Console.WriteLine("RESULT: Tails");
             }
+
+            Console.WriteLine("Do you want to flip again, press y");
+            string ask = Console.ReadLine();
+
+            while (ask == "y")
+            {
+                Main(args);
+            }
+
             Console.ReadLine();
         }
     }
