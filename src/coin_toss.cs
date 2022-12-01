@@ -17,14 +17,23 @@ namespace Coin_Toss
             string num = Console.ReadLine();
             int num1 = Convert.ToInt32(num);
 
+            if (num1 == 1) {
+                Console.WriteLine("You guessed Heads");
+            }
+            else if (num1 == 2)
+            {
+                Console.WriteLine("You guessed Tails");
+            }
+
             int randomno = random.Next(1,3);
             if (randomno == 1 ) {
-                Console.WriteLine("Heads");
+                Console.WriteLine("RESULT: Heads");
             }
             else if (randomno == 2 )
             {
-                Console.WriteLine("Tails");
+                Console.WriteLine("RESULT: Tails");
             }
+            Console.ReadLine();
         }
     }
 }
