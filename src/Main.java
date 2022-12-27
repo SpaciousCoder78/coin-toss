@@ -12,7 +12,7 @@ public class Main {
             System.out.println("You Chose: Tails");
         }
         Random random = new Random();
-        int randomint = random.nextInt(1);
+        int randomint = random.nextInt(2);
         if (randomint==0){
             System.out.println("RESULT: Heads");
         }
